@@ -1,0 +1,50 @@
+*{
+    font-family: "Oxanium", sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    margin: 0px;
+    display: block;
+    grid-template-rows: 120px 1fr 60px ;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "cabecalho"
+        "principal"
+        "rodape";
+}
+
+.cabecalho{
+    grid-area: cabecalho;
+    display: flex;
+    background-color: black;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.principal{
+    grid-area: principal;
+    height: calc(100vh - 180px);
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+
+
+
+
+
+.rodape{
+    grid-area: rodape;
+    background-color: #412361;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.2rem;
+    padding-right: 20px;
+    color: aliceblue;
+    height: 100px;
+}
